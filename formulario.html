@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NERDOLADOSGAMES</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-success text-white d-flex align-items-center">
+        <!-- Logo -->
+        <div class="col-2 text-center">
+            <img src="../braian/imagem/logodosgugu.webp" width="50px" height="auto">
+        </div>
+        <!-- Navegação -->
+        <nav class="navbar navbar-expand-lg navbar-light col-8">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../braian/index.html">INICIO</a>
+                    <a class="nav-item nav-link" href="../braian/jogos.html">JOGOS</a>
+                    <a class="nav-item nav-link" href="../braian/noticias.html">NOTICIAS</a>
+                    <a class="nav-item nav-link" href="../braian/escolhas/escolhas.html">CONSOLES</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Login -->
+        <div class="col-2 text-right">
+            <a href="../braian/formulario.html">
+                <img src="../braian/imagem/login.png" width="50px" height="auto" alt="LOGIN">
+            </a>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+      <section class="col-md-12 border border-dark m-5">
+        <h2 class="text-center">Faça seu cadastro aqui!</h2>
+        <form action="../braian/index.html" method="post">
+            <div class="form-group">
+                <label for="nome">NOME:</label>
+                <input type="text" name="nome" id="nome" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">EMAIL:</label>
+                <input type="email" name="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="senha">SENHA:</label>
+                <input type="password" name="senha" id="senha" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>IDADE:</label>
+                <div>
+                    <input type="radio" name="idade" id="idade-14" value="-14">
+                    <label for="idade-14">-14</label>
+                </div>
+                <div>
+                    <input type="radio" name="idade" id="idade+14" value="+14">
+                    <label for="idade+14">+14</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>JÁ CONHECIA O XBOX ANTES?</label>
+                <div>
+                    <input type="radio" name="conhece" id="sim" value="sim">
+                    <label for="sim">Sim</label>
+                </div>
+                <div>
+                    <input type="radio" name="conhece" id="nao" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+            </div>
+            <button type="submit" name="enviar" class="btn btn-success">Enviar</button>
+        </form>
+    </section>
+    </main>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
